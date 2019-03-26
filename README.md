@@ -2,17 +2,20 @@
 
 # bookface
 
+![alt text](https://i.imgur.com/lbYrx0Y.png)
 ![alt text]()
 
-**Source:** 
+**Source:** Created by ben on TryHackMe
 
 ***Description:***
-
-​	
+	
+​	Are you able to root this machine?
 
 ***Related Hosting Links***
 
-- 
+- TryHackMe
+- 	Hosted as a subscriber only room at the time of writing.
+- 	Link: https://tryhackme.com/room/bookface
 
 ***Special Notes:***
 
@@ -22,6 +25,10 @@
 
 ***Instructions:*** 
 
+- As we start most boxes, let's begin with some scanning! For this, let's use nmap.
+  - ![alt text](https://i.imgur.com/pKgOHHo.jpg)
+  - ![alt text](https://i.imgur.com/mypkUn4.jpg)
+- Well that's odd. After allowing this scan to run to completion, I found that every port on this box is reporting as open. Within this instance, if we allow nmap to complete we can see this isn't entirely true, but nmap clearly isn't helping us in this case.
 - 
 
 
@@ -34,4 +41,7 @@
 
 ***Flags:***
 
-​	
+1. On the FTP server, specifically within the flag1 file.
+2. Within the DNS txt records, listed as a txt record along with some port information.
+3. UNKNOWN
+4. UNKNOWN
