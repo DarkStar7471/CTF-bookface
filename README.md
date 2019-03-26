@@ -28,7 +28,8 @@
 - As we start most boxes, let's begin with some scanning! For this, let's use nmap.
   - ![alt text](https://i.imgur.com/pKgOHHo.jpg)
   - ![alt text](https://i.imgur.com/mypkUn4.jpg)
-- Well that's odd. After allowing this scan to run to completion, I found that every port on this box is reporting as open. Within this instance, if we allow nmap to complete we can see this isn't entirely true, but nmap clearly isn't helping us in this case.
+- Well that's odd. After allowing this scan to run to completion, I found that every port on this box is reporting as open. Within this instance, if we allow nmap to complete we can see this isn't entirely true, but nmap clearly isn't helping us in this case. Let's go ahead and try Nessus. 
+-	 ![alt text](https://imgur.com/tLDPafd)
 - 
 
 
