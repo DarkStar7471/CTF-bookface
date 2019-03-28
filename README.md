@@ -76,6 +76,6 @@
 
 1. On the FTP server, specifically within the flag1 file.
 2. Within the DNS txt records, listed as a txt record along with some port information.
-3. UNKNOWN
-4. UNKNOWN
+3. In the home directory of the bookface box.
+4. In the root directory of the bookface box.
 
