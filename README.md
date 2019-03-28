@@ -59,10 +59,13 @@
   - ![alt text](https://i.imgur.com/y6H7ctN.jpg)
 - Bingo! There's our third flag! Looks like no other users than jerry and root, let's move on to enumeration. For this specific instance, we'll cover all of our bases by using a Priv Esc checklist. I'll be using this specific version: 
   - https://failingsilently.wordpress.com/2017/08/07/privesc/
+- We'll go ahead and run the following to check all of the binaries for anything out of the ordinary on the system
+  - ![alt text](https://i.imgur.com/Is1kPyH.png)
+  - ![alt text](https://i.imgur.com/13jdpkU.png)
 - It appears that we have an outdated version of screens installed, upon looking online we find the following vulnerability
   - ![alt text](https://i.imgur.com/RnHZ5Wx.jpg)
   - Link: https://www.exploit-db.com/exploits/41154
-- Now to run this! Let's go ahead and pull it from our box using SimpleHTTPServer again, notes that I have created a script named 'screenEsc.sh' and have added the contents of the screen exploit script to this file. Additionally, this SimpleHTTPServer is hosted within the same directory as the screenEsc.sh.
+- Now to run this! Let's go ahead and pull it from our box using SimpleHTTPServer, note that I have created a script named 'screenEsc.sh' and have added the contents of the screen exploit script to this file. Additionally, this SimpleHTTPServer is hosted within the same directory as the screenEsc.sh and I have modified the 'screen' commad within this script to fit our specific binary (screen-4.05.0)
   - ![alt text](https://i.imgur.com/CWeDIOG.jpg)
   - ![alt text]()
 - Looking good! Let's check for our final flag in root's home directory
