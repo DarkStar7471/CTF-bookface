@@ -47,10 +47,20 @@
 - There's our first flag and a lovely note. Let's check out that note
   - ![alt text](https://i.imgur.com/nBlENjB.jpg)
 - Looks like we'll need to revisit that DNS service. Let's try a dig lookup against the box
+  - ![alt text](https://i.imgur.com/Ojs2fVC.jpg)
+  - ![alt text](https://i.imgur.com/g1rg23D.jpg)
+- And there's our second flag with some interesting ports listed in an odd order. Let's giving port knocking this a try! We'll go ahead and use the knockd package (apt install knockd)
+- Through a little bit of testing of different login methods with the credentials we've previously gained, we find that we can run this port knocking script and then immediately attempt to log into the newly exposed ssh port. We can run this as such:
+  - ![alt text](https://i.imgur.com/8irj8ZK.jpg)
+  - ![alt text](https://i.imgur.com/nVvknXF.jpg)
+- Success! Looks like Jerry's home directory is being served directly by the ftp server, whoops!
   - ![alt text]()
-- And there's our second flag with some interesting ports listed in an odd order. Let's giving port knocking this a try! For a good port knocking script, check out my knock.sh repository. *This isn't originally my script but I've reposted it here for my own use and for others to clone.*
-  - ![alt text](https://i.imgur.com/ChoWZbt.jpg)
-- We'll go ahead and this this script as such:
+- First, let's see what other users we have present on the machine by checking the home directory
+  - ![alt text]()
+- Bingo! There's our third flag! Looks like no other users than jerry and root, let's move on to enumeration
+  - ![alt text]()
+  - ![alt text]()
+- It appears that we have an outdated version of screens installed, upon looking online we find the following vulnerability
   - ![alt text]()
 - 
 
