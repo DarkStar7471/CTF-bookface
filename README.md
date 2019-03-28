@@ -36,6 +36,7 @@
   - Discovery: All Ports
   - Advanced: Scan low bandwidth links*
     - *This is useful for our case as we are scanning over a vpn connection
+    - *It is also worth noting that running UDP and ACK scans will also find near identical results to Nessus. UDP will find DNS and ACK will identify FTP*
 - Let's go ahead and take a look at the results of this scan
   - ![alt text](https://i.imgur.com/IYtcKF3.jpg)
 - Interesting, it looks like both DNS and FTP services are reporting on the target box. We'll revisit DNS later, for now let's try and brute force the FTP credentials. For this, we'll be using hydra. Additionally, we'll be using jerry as our test user since he was listed above as the developer.
@@ -57,11 +58,7 @@
   - ![alt text](https://i.imgur.com/y6H7ctN.jpg)
 - First, let's see what other users we have present on the machine by checking the home directory
   - ![alt text](https://i.imgur.com/y6H7ctN.jpg)
-- Bingo! There's our third flag! Looks like no other users than jerry and root, let's move on to enumeration. First, let's host our LinEnum script so we can run this on the bookface box. We can do this with SimpleHTTPServer *Note this is done within the directory containing LinEnum.sh*
-  - ![alt text](https://i.imgur.com/mp5WEgG.jpg)
-- Next, we can download and immediately run this script while ssh'd into bookface
-  - ![alt text](https://i.imgur.com/pq9UbaL.jpg)
-  - ![alt text](https://i.imgur.com/EqLwsc1.jpg)
+- Bingo! There's our third flag! Looks like no other users than jerry and root, let's move on to enumeration. For this specific instance, we'll cover all of our bases by using a Priv Esc checklist. I'll be using this specific version: https://failingsilently.wordpress.com/2017/08/07/privesc/
   - *This can be found as well through running 'locate screen'*
 - It appears that we have an outdated version of screens installed, upon looking online we find the following vulnerability
   - ![alt text](https://i.imgur.com/RnHZ5Wx.jpg)
