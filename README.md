@@ -65,11 +65,15 @@
 - It appears that we have an outdated version of screens installed, upon looking online we find the following vulnerability
   - ![alt text](https://i.imgur.com/RnHZ5Wx.jpg)
   - Link: https://www.exploit-db.com/exploits/41154
-- Now to run this! Let's go ahead and pull it from our box using SimpleHTTPServer, note that I have created a script named 'screenEsc.sh' and have added the contents of the screen exploit script to this file. Additionally, this SimpleHTTPServer is hosted within the same directory as the screenEsc.sh and I have modified the 'screen' commad within this script to fit our specific binary (screen-4.05.0)
+- Now to run this! Let's go ahead and pull it from our box using SimpleHTTPServer again, notes that I have created a script named 'screenEsc.sh' and have added the contents of the screen exploit script to this file. Additionally, this SimpleHTTPServer is hosted within the same directory as the screenEsc.sh.
+  - ![alt text](https://i.imgur.com/679ctap.png)
+  - *Modification locations for screenEsc.sh*
+  - ![alt text](https://i.imgur.com/bIa1uVk.png)
+- We'll pull and run this script with the following command
   - ![alt text](https://i.imgur.com/CWeDIOG.jpg)
-  - ![alt text]()
+  - ![alt text](https://i.imgur.com/gKpeayg.png)
 - Looking good! Let's check for our final flag in root's home directory
-  - ![alt text]()
+  - ![alt text](https://i.imgur.com/nimI0o8.png)
 
 
 
