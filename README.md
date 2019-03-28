@@ -3,7 +3,7 @@
 # bookface
 
 ![alt text](https://i.imgur.com/lbYrx0Y.png)
-![alt text]()
+
 
 **Source:** Created by ben on TryHackMe
 
@@ -54,12 +54,13 @@
   - ![alt text](https://i.imgur.com/8irj8ZK.jpg)
   - ![alt text](https://i.imgur.com/nVvknXF.jpg)
 - Success! Looks like Jerry's home directory is being served directly by the ftp server, whoops!
-  - ![alt text]()
+  - ![alt text](https://i.imgur.com/y6H7ctN.jpg)
 - First, let's see what other users we have present on the machine by checking the home directory
-  - ![alt text]()
-- Bingo! There's our third flag! Looks like no other users than jerry and root, let's move on to enumeration
-  - ![alt text]()
-  - ![alt text]()
+  - ![alt text](https://i.imgur.com/y6H7ctN.jpg)
+- Bingo! There's our third flag! Looks like no other users than jerry and root, let's move on to enumeration. First, let's host our LinEnum script so we can run this on the bookface box. We can do this with SimpleHTTPServer *Note this is done within the directory containing LinEnum.sh*
+  - ![alt text](https://i.imgur.com/mp5WEgG.jpg)
+- Next, we can download and immediately run this script while ssh'd into bookface
+  - ![alt text](https://i.imgur.com/pq9UbaL.jpg)
 - It appears that we have an outdated version of screens installed, upon looking online we find the following vulnerability
   - ![alt text]()
 - 
