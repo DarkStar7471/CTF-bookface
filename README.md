@@ -48,7 +48,7 @@
 - 	![alt text](https://i.imgur.com/nBlENjB.jpg)
 - Looks like we'll need to revisit that DNS service. Let's try a dig lookup against the box
 - 	![alt text]()
-- And there's our second flag with some interesting ports for an internal social-media site
+- And there's our second flag with some interesting ports listed in an odd order. Let's giving port knocking this a try! For a good port knocking script, check out my knock.sh repository. *This isn't originally my script but I've reposted it here for my own use and for others to clone.*
 - 	![alt text]()
 
 
