@@ -53,17 +53,16 @@
 - And there's our second flag with some interesting ports listed in an odd order. Let's giving port knocking this a try! We'll go ahead and use the knockd package (apt install knockd)
 - Through a little bit of testing of different login methods with the credentials we've previously gained, we find that we can run this port knocking script and then immediately attempt to log into the newly exposed ssh port. We can run this as such:
   - ![alt text](https://i.imgur.com/8irj8ZK.jpg)
-  - ![alt text](https://i.imgur.com/I67Zh8z.jpg)
 - Success! Looks like Jerry's home directory is being served directly by the ftp server, whoops!
-  - ![alt text](https://i.imgur.com/y6H7ctN.jpg)
+  - ![alt text](https://i.imgur.com/I67Zh8z.jpg)
 - First, let's see what other users we have present on the machine by checking the home directory
   - ![alt text](https://i.imgur.com/y6H7ctN.jpg)
-- Bingo! There's our third flag! Looks like no other users than jerry and root, let's move on to enumeration. For this specific instance, we'll cover all of our bases by using a Priv Esc checklist. I'll be using this specific version: https://failingsilently.wordpress.com/2017/08/07/privesc/
-  - *This can be found as well through running 'locate screen'*
+- Bingo! There's our third flag! Looks like no other users than jerry and root, let's move on to enumeration. For this specific instance, we'll cover all of our bases by using a Priv Esc checklist. I'll be using this specific version: 
+  - https://failingsilently.wordpress.com/2017/08/07/privesc/
 - It appears that we have an outdated version of screens installed, upon looking online we find the following vulnerability
   - ![alt text](https://i.imgur.com/RnHZ5Wx.jpg)
   - Link: https://www.exploit-db.com/exploits/41154
-- Now to run this! Let's go ahead and pull it from our box using SimpleHTTPServer again
+- Now to run this! Let's go ahead and pull it from our box using SimpleHTTPServer again, notes that I have created a script named 'screenEsc.sh' and have added the contents of the screen exploit script to this file. Additionally, this SimpleHTTPServer is hosted within the same directory as the screenEsc.sh.
   - ![alt text](https://i.imgur.com/CWeDIOG.jpg)
   - ![alt text]()
 - Looking good! Let's check for our final flag in root's home directory
