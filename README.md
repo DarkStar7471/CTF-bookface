@@ -61,8 +61,10 @@
   - ![alt text](https://i.imgur.com/mp5WEgG.jpg)
 - Next, we can download and immediately run this script while ssh'd into bookface
   - ![alt text](https://i.imgur.com/pq9UbaL.jpg)
+  - ![alt text](https://i.imgur.com/EqLwsc1.jpg)
 - It appears that we have an outdated version of screens installed, upon looking online we find the following vulnerability
-  - ![alt text]()
+  - ![alt text](https://i.imgur.com/RnHZ5Wx.jpg)
+  - Link: https://www.exploit-db.com/exploits/41154
 - 
 
 
