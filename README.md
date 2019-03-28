@@ -52,7 +52,7 @@
 - And there's our second flag with some interesting ports listed in an odd order. Let's giving port knocking this a try! We'll go ahead and use the knockd package (apt install knockd)
 - Through a little bit of testing of different login methods with the credentials we've previously gained, we find that we can run this port knocking script and then immediately attempt to log into the newly exposed ssh port. We can run this as such:
   - ![alt text](https://i.imgur.com/8irj8ZK.jpg)
-  - ![alt text](https://i.imgur.com/nVvknXF.jpg)
+  - ![alt text](https://i.imgur.com/I67Zh8z.jpg)
 - Success! Looks like Jerry's home directory is being served directly by the ftp server, whoops!
   - ![alt text](https://i.imgur.com/y6H7ctN.jpg)
 - First, let's see what other users we have present on the machine by checking the home directory
