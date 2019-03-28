@@ -62,10 +62,15 @@
 - Next, we can download and immediately run this script while ssh'd into bookface
   - ![alt text](https://i.imgur.com/pq9UbaL.jpg)
   - ![alt text](https://i.imgur.com/EqLwsc1.jpg)
+  - *This can be found as well through running 'locate screen'*
 - It appears that we have an outdated version of screens installed, upon looking online we find the following vulnerability
   - ![alt text](https://i.imgur.com/RnHZ5Wx.jpg)
   - Link: https://www.exploit-db.com/exploits/41154
-- 
+- Now to run this! Let's go ahead and pull it from our box using SimpleHTTPServer again
+  - ![alt text](https://i.imgur.com/CWeDIOG.jpg)
+  - ![alt text]()
+- Looking good! Let's check for our final flag in root's home directory
+  - ![alt text]()
 
 
 
